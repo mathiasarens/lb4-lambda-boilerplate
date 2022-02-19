@@ -1,7 +1,7 @@
 service: test-api
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs12.x
   stage: dev
   region: us-east-1
   timeout: 900
@@ -21,4 +21,3 @@ functions:
           cors: true
 plugins:
   - serverless-offline
-
